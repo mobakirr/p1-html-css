@@ -1,269 +1,99 @@
-<html><body><h1>TUI boekingsformulier</h1>
-<title>TUI Boekingsformulier</title>
-
-<input type="text"  name="naam" pattern=".{2,}" title="Minimaal 2 tekens" placeholder="Geef uw voornaam" required/>*</p>
-<input type="text"  name="naam" pattern=".{2,}" title="Minimaal 2 tekens" placeholder="Geef uw achternaam" required/>*</p>
-<label for="Geslacht">Geslacht:</label>
-
-<select id="Geslacht">
-  <option value="Man">Man</option>
-  <option value="Vrouw">Vrouw</option>
-</select></p>
-<input type="text"  name="adres" pattern=".{2,}" title="Minimaal 2 tekens" placeholder="Uw adres" required/>*</p>
-<input type="text"  name="Postcode" pattern=".{2,}" title="Minimaal 2 tekens" placeholder="Uw Postcode" required/>*</p>
-<input type="text"  name="Stad" pattern=".{2,}" title="Minimaal 2 tekens" placeholder="Uw stad" required/>*</p>
-<input type="text"  name="Land" pattern=".{2,}" title="Minimaal 2 tekens" placeholder="Uw Land" required/>*</p>
-<input type="text"  name="Postcode" pattern=".{2,}" title="Minimaal 2 tekens" placeholder="Uw Postcode" required/>*</p>
-<input name="BSN"
-    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-    type = "number"
-    maxlength = "9"
-    Placeholder="BSN nummer"
-    
-
- />*</p>
- <label for="Geslacht">Naar welke Land:</label>
- <select id="Vakantieland">
-    <option value="Afghanistan">Afghanistan</option>
-<option value="Albanië">Albanië</option>
-<option value="Algerije">Algerije</option>
-<option value="Andorra">Andorra</option>
-<option value="Angola">Angola</option>
-<option value="Antigua-Barbuda">Antigua-Barbuda</option>
-<option value="Argentinië">Argentinië</option>
-<option value="Armenië">Armenië</option>
-<option value="Aruba">Aruba</option>
-<option value="Australië">Australië</option>
-<option value="Azerbaijan">Azerbaijan</option>
-<option value="Bahamas">Bahamas</option>
-<option value="Bahrein">Bahrein</option>
-<option value="Belize">Belize</option>
-<option value="België">België</option>
-<option value="Bermuda">Bermuda</option>
-<option value="Bolivia">Bolivia</option>
-<option value="Bosnië-Herzegovina">Bosnië-Herzegovina</option>
-<option value="Botswana">Botswana</option>
-<option value="Brazilië">Brazilië</option>
-<option value="Brunei Darussalam">Brunei Darussalam</option>
-<option value="Bulgarije">Bulgarije</option>
-<option value="Burundi">Burundi</option>
-<option value="Cambodja">Cambodja</option>
-<option value="Cameroen">Cameroen</option>
-<option value="Canada">Canada</option>
-<option value="Cayman Eilanden">Cayman Eilanden</option>
-<option value="Centraal-Afrikaanse Republiek">Centraal-Afrikaanse Republiek</option>
-<option value="Chili">Chili</option>
-<option value="China">China</option>
-<option value="Ciprus">Ciprus</option>
-<option value="Colombia">Colombia</option>
-<option value="Congo">Congo</option>
-<option value="Cook Eilanden">Cook Eilanden</option>
-<option value="Costa Rica">Costa Rica</option>
-<option value="Groatië">Groatië</option>
-<option value="Cuba">Cuba</option>
-<option value="Cyprus">Cyprus</option>
-<option value="Denemarken">Denemarken</option>
-<option value="Dominica">Dominica</option>
-<option value="Dominicaanse Republiek">Dominicaanse Republiek</option>
-<option value="DR Congo">DR Congo</option>
-<option value="Duitsland">Duitsland</option>
-<option value="Ecuador">Ecuador</option>
-<option value="Egypte">Egypte</option>
-<option value="El Salvador">El Salvador</option>
-<option value="Eritrea">Eritrea</option>
-<option value="Estland">Estland</option>
-<option value="Ethiopië">Ethiopië</option>
-<option value="Fiji">Fiji</option>
-<option value="Filipijnen">Filipijnen</option>
-<option value="Finland">Finland</option>
-<option value="Frankrijk">Frankrijk</option>
-<option value="Frans Polynesië">Frans Polynesië</option>
-<option value="Gabon">Gabon</option>
-<option value="Gambia">Gambia</option>
-<option value="Georgië">Georgië</option>
-<option value="Ghana">Ghana</option>
-<option value="Griekenland">Griekenland</option>
-<option value="Groenland">Groenland</option>
-<option value="Guam">Guam</option>
-<option value="Guatemala">Guatemala</option>
-<option value="Guinee-Bissau">Guinee-Bissau</option>
-<option value="Guyana">Guyana</option>
-<option value="Haïti">Haïti</option>
-<option value="Honduras">Honduras</option>
-<option value="Hongarije">Hongarije</option>
-<option value="Ierland">Ierland</option>
-<option value="IJsland">IJsland</option>
-<option value="India">India</option>
-<option value="Indonesië">Indonesië</option>
-<option value="Irak">Irak</option>
-<option value="Iran">Iran</option>
-<option value="Israël">Israël</option>
-<option value="Italië">Italië</option>
-<option value="Ivoorkust">Ivoorkust</option>
-<option value="Jamaica">Jamaica</option>
-<option value="Japan">Japan</option>
-<option value="Jemen">Jemen</option>
-<option value="Joegoslavië">Joegoslavië</option>
-<option value="Jordanië">Jordanië</option>
-<option value="Kameroen">Kameroen</option>
-<option value="Kazachstan">Kazachstan</option>
-<option value="Kenya">Kenya</option>
-<option value="Kirgizstan">Kirgizstan</option>
-<option value="Koeweit">Koeweit</option>
-<option value="Korea">Korea</option>
-<option value="Kroatië">Kroatië</option>
-<option value="Laos">Laos</option>
-<option value="Lesotho">Lesotho</option>
-<option value="Letland">Letland</option>
-<option value="Libanon">Libanon</option>
-<option value="Liberia">Liberia</option>
-<option value="Libië">Libië</option>
-<option value="Liechtenstein">Liechtenstein</option>
-<option value="Litouwen">Litouwen</option>
-<option value="Luxemburg">Luxemburg</option>
-<option value="Macedonië">Macedonië</option>
-<option value="Maleisië">Maleisië</option>
-<option value="Mali">Mali</option>
-<option value="Malta">Malta</option>
-<option value="Marokko">Marokko</option>
-<option value="Mauritanië">Mauritanië</option>
-<option value="Mauritius">Mauritius</option>
-<option value="Mexico">Mexico</option>
-<option value="Moldova">Moldova</option>
-<option value="Monaco">Monaco</option>
-<option value="Mozambique">Mozambique</option>
-<option value="Namibië">Namibië</option>
-<option value="Nederland" SELECTED>Nederland</option>
-<option value="Nepal">Nepal</option>
-<option value="Nicaragua">Nicaragua</option>
-<option value="Nieuw Zeeland">Nieuw Zeeland</option>
-<option value="Niger">Niger</option>
-<option value="Nigeria">Nigeria</option>
-<option value="Noorwegen">Noorwegen</option>
-<option value="Oezbekistan">Oezbekistan</option>
-<option value="Oman">Oman</option>
-<option value="Oostenrijk">Oostenrijk</option>
-<option value="Pakistan">Pakistan</option>
-<option value="Papoea-Nieuw-Guinea">Papoea-Nieuw-Guinea</option>
-<option value="Paraguay">Paraguay</option>
-<option value="Peru">Peru</option>
-<option value="Polen">Polen</option>
-<option value="Portugal">Portugal</option>
-<option value="Puerto Rico">Puerto Rico</option>
-<option value="Quatar">Quatar</option>
-<option value="Roemenië">Roemenië</option>
-<option value="Rusland">Rusland</option>
-<option value="Rwanda">Rwanda</option>
-<option value="Saint Lucia">Saint Lucia</option>
-<option value="Salomonseilanden">Salomonseilanden</option>
-<option value="San Marino">San Marino</option>
-<option value="Saudi-Arabië">Saudi-Arabië</option>
-<option value="Schotland">Schotland</option>
-<option value="Senegal">Senegal</option>
-<option value="Sierra Leone">Sierra Leone</option>
-<option value="Singapore">Singapore</option>
-<option value="Slovenië">Slovenië</option>
-<option value="Slowakije">Slowakije</option>
-<option value="Somalië">Somalië</option>
-<option value="Spanje">Spanje</option>
-<option value="Sri Lanka">Sri Lanka</option>
-<option value="Sudan">Sudan</option>
-<option value="Syrie">Syrie</option>
-<option value="Tadzjikistan">Tadzjikistan</option>
-<option value="Taiwan">Taiwan</option>
-<option value="Thailand">Thailand</option>
-<option value="Tobago">Tobago</option>
-<option value="Tsjechië">Tsjechië</option>
-<option value="Tsjaad">Tsjaad</option>
-<option value="Tunesië">Tunesië</option>
-<option value="Turkije">Turkije</option>
-<option value="Turkmenistan">Turkmenistan</option>
-<option value="Trinidad">Trinidad</option>
-<option value="Uganda">Uganda</option>
-<option value="Ukraine">Ukraine</option>
-<option value="Uruguay">Uruguay</option>
-<option value="Venezuela">Venezuela</option>
-<option value="Verenigd Koninkrijk">Verenigd Koninkrijk</option>
-<option value="Verenigde Staten">Verenigde Staten</option>
-<option value="Vietnam">Vietnam</option>
-<option value="Zaïre">Zaïre</option>
-<option value="Zambia">Zambia</option>
-<option value="Zimbabwe">Zimbabwe</option>
-<option value="Zuid-Afrika">Zuid-Afrika</option>
-<option value="Zweden">Zweden</option>
-<option value="Zwitserland">Zwitserland</option>
-</select></p>
-	
+<!DOCTYPE html>
 <html>
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-</head>
-<body>Datum van vertrek:
-<input type="date" id="inputdate" name="inputdate">
- 
-</body>
-<script type="text/javascript">
-$(function(){
-    var dtToday = new Date();
- 
-    var month = dtToday.getMonth() + 1;
-    var day = dtToday.getDate();
-    var year = dtToday.getFullYear();
-    if(month < 10)
-        month = '0' + month.toString();
-    if(day < 10)
-     day = '0' + day.toString();
-    var maxDate = year + '-' + month + '-' + day;
-    $('#inputdate').attr('min', maxDate);
-});
-</script>
-</html>
-</p>
+    <title>TUI Boekingsformulier</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            
+            var vertrekdatum = document.getElementById('vertrekdatum');
+            var terugkomstdatum = document.getElementById('terugkomstdatum');
 
-</head>
-<body>Datum van terugkomst:
-<input type="date" id="inputdate" name="inputdate">
- 
-</body>
-</html>
+            
+            var morgen = new Date();
+            morgen.setDate(morgen.getDate() + 1);
 
-</p>
-<label for="Geslacht">Hoeveel medereizigers:</label>
- <select id="Vakantieland">
-    <option value="0">0</option>
-    <option value="1">1</option>
-	<option value="2">2</option>
-	<option value="3">3</option>
-	<option value="4">4</option>
-	</p><br>
-	</p>
-	<html>
+            
+            vertrekdatum.min = morgen.toISOString().split('T')[0];
+            terugkomstdatum.min = morgen.toISOString().split('T')[0];
+        });
+    </script>
+</head>
 <body>
+    <h1>TUI Boekingsformulier</h1>
+    <form action="verwerk.php" method="post">
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" id="voornaam" name="voornaam" pattern="[A-Za-z]+" required>
+        <br>
 
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" id="achternaam" name="achternaam" pattern="[A-Za-z]+" required>
+        <br>
 
-<form>
-  <input type="button" type=”reset” value="Boek Nu" onclick="msg()">
-</form>
-</p>
-<script>
-function msg() {
-  alert("U Afspraak is geboekt");
-}
-</script>
+        <label>Geslacht:</label>
+        <input type="radio" id="man" name="geslacht" value="man" checked>
+        <label for="man">Man</label>
+        <input type="radio" id="vrouw" name="geslacht" value="vrouw">
+        <label for="vrouw">Vrouw</label>
+        <br>
 
+        <label for="straat">Straat met huisnummer:</label>
+        <input type="text" id="straat" name="straat" required>
+        <br>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" required>
+        <br>
+
+        <label for="stad">Stad:</label>
+        <input type="text" id="stad" name="stad" required>
+        <br>
+
+        <label for="land">Land:</label>
+        <select id="land" name="land" required>
+            <option value="Nederland">Nederland</option>
+            <option value="België">België</option>
+            <option value="Frankrijk">Frankrijk</option>
+        </select>
+        <br>
+
+        <label for="bsn">BSN-nummer:</label>
+        <input type="text" id="bsn" name="bsn" pattern="[0-9]{1,9}" required>
+        <br>
+
+        <label for="vakantieland">Vakantieland:</label>
+        <select id="vakantieland" name="vakantieland" required>
+            <option value="Spanje">Spanje</option>
+            <option value="Italië">Italië</option>
+            <option value="Griekenland">Griekenland</option>
+        </select>
+        <br>
+
+        <label for="vertrekdatum">Datum van vertrek:</label>
+        <input type="date" id="vertrekdatum" name="vertrekdatum" required>
+        <br>
+
+        <label for="terugkomstdatum">Datum van terugkomst:</label>
+        <input type="date" id="terugkomstdatum" name="terugkomstdatum" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
+        <br>
+
+        <label for="aantal_reisgenoten">Aantal reisgenoten (max 4):</label>
+        <input type="number" id="aantal_reisgenoten" name="aantal_reisgenoten" min="0" max="4" required>
+        <br>
+
+        <input type="submit" value="Boek nu">
+    </form>
+
+    <h2>Accountinformatie</h2>
+    <form action="registreer.php" method="post">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="wachtwoord">Wachtwoord:</label>
+        <input type="password" id="wachtwoord" name="wachtwoord" required>
+        <br>
+
+        <input type="submit" value="Account aanmaken">
+    </form>
 </body>
 </html>
-</p>
-
-<Body>Uw e-mail: </Body><input type="email" name="email" onClick="this.value=''" Placeholder="Uw e-mail" required />*</p>
-<label for="pwd">Uw wachtwoord: </label>
-<input type="password" id="pwd" name="pwd">*</></p>
-
-  <input type="button" type=”reset” value="Account Aanmaken" onclick="msg()">
-</form>
-</p>
-<script>
-function msg() {
-  alert("U Account is aangemaakt");
-}
-</script>
