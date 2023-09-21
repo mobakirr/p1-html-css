@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TUI Boekingsformulier</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            
+            var vertrekdatum = document.getElementById('vertrekdatum');
+            var terugkomstdatum = document.getElementById('terugkomstdatum');
+
+            
+            var morgen = new Date();
+            morgen.setDate(morgen.getDate() + 1);
+
+            
+            vertrekdatum.min = morgen.toISOString().split('T')[0];
+            terugkomstdatum.min = morgen.toISOString().split('T')[0];
+        });
+    </script>
+</head>
+<body>
+    <h1>TUI Boekingsformulier</h1>
+    <form action="verwerk.php" method="post">
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" id="voornaam" name="voornaam" pattern="[A-Za-z]+" required>
+        <br>
+
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" id="achternaam" name="achternaam" pattern="[A-Za-z]+" required>
+        <br>
+
+        <label>Geslacht:</label>
+        <input type="radio" id="man" name="geslacht" value="man" checked>
+        <label for="man">Man</label>
+        <input type="radio" id="vrouw" name="geslacht" value="vrouw">
+        <label for="vrouw">Vrouw</label>
+        <br>
+
+        <label for="straat">Straat met huisnummer:</label>
+        <input type="text" id="straat" name="straat" required>
+        <br>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" required>
+        <br>
+
+        <label for="stad">Stad:</label>
+        <input type="text" id="stad" name="stad" required>
+        <br>
+
+        <label for="land">Land:</label>
+        <select id="land" name="land" required>
+            <option value="Nederland">Nederland</option>
+            <option value="België">België</option>
+            <option value="Frankrijk">Frankrijk</option>
+        </select>
+        <br>
+
+        <label for="bsn">BSN-nummer:</label>
+        <input type="text" id="bsn" name="bsn" pattern="[0-9]{1,9}" required>
+        <br>
+
+        <label for="vakantieland">Vakantieland:</label>
+        <select id="vakantieland" name="vakantieland" required>
+            <option value="Spanje">Spanje</option>
+            <option value="Italië">Italië</option>
+            <option value="Griekenland">Griekenland</option>
+        </select>
+        <br>
+
+        <label for="vertrekdatum">Datum van vertrek:</label>
+        <input type="date" id="vertrekdatum" name="vertrekdatum" required>
+        <br>
+
+        <label for="terugkomstdatum">Datum van terugkomst:</label>
+        <input type="date" id="terugkomstdatum" name="terugkomstdatum" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
+        <br>
+
+        <label for="aantal_reisgenoten">Aantal reisgenoten (max 4):</label>
+        <input type="number" id="aantal_reisgenoten" name="aantal_reisgenoten" min="0" max="4" required>
+        <br>
+
+        <input type="submit" value="Boek nu">
+    </form>
+
+    <h2>Accountinformatie</h2>
+    <form action="registreer.php" method="post">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="wachtwoord">Wachtwoord:</label>
+        <input type="password" id="wachtwoord" name="wachtwoord" required>
+        <br>
+
+        <input type="submit" value="Account aanmaken">
+    </form>
+</body>
+</html>
