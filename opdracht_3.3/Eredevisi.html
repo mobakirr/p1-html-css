@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eredivisie Standen</title>
+    <style>
+
+.foo {<!--from w w w  .  j  a v  a  2  s.c  o m-->
+   float: center;
+   width: 20px;
+   height: 20px;
+   margin: 5px;
+   border: 1px solid rgba(0, 0, 0, .2);
+}
+.blue {
+   background: #13b4ff;
+}
+.purple {
+   background: #FFFF00;
+}
+.wine {
+   background: #0000FF;
+}
+.swine {
+   background: #FFA500;
+}
+.sswine {
+   background: #FF5733;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF5733;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #FF5733;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            max-width: 40px;
+            max-height: 40px;
+        }
+
+        .logo-column {
+            width: 10%;
+        }
+
+        .team-column {
+            width: 30%;
+        }
+
+        /* Kleuren voor de competities */
+        .champions-league td {
+            background-color: #32CD32; /* Groen voor Champions League */
+        }
+
+        .champions-league-qual td {
+            background-color: #FFFF00; /* Geel voor Champions League kwalificatie */
+        }
+
+        .europa-league-qual td {
+            background-color: #0000FF; /* Blauw voor Europa League kwalificatie */
+        }
+
+        .conference-league-qual td {
+            background-color: #FFA500; /* Oranje voor Conference League kwalificatie */
+        }
+
+        /* Kleur voor Play-offs Europa Conference League kwalificatie */
+        .play-offs-conference-league-qual td {
+            background-color: #FF5733; /* Rood voor Play-offs Conference League kwalificatie */
+        }
+    </style>
+</head>
+<body>
+    <h1>Eredivisie Standen</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Stand</th>
+                <th>Logo</th>
+                <th>Team</th>
+                <th>Gespeeld</th>
+                <th>Winst</th>
+                <th>Gelijk</th>
+                <th>Verloren</th>
+                <th>Doelsaldo</th>
+                <th>Punten</th>
+                <th>Competitie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="champions-league">
+                <td>1</td>
+                <td><img src="psv_logo.png" alt="PSV Logo"></td>
+                <td class="team-column">PSV</td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>+12</td>
+                <td>12</td>
+                <td>Champions League</td>
+            </tr>
+            <tr class="champions-league">
+                <td>2</td>
+                <td><img src="az_logo.png" alt="AZ Logo"></td>
+                <td class="team-column">AZ</td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>+10</td>
+                <td>12</td>
+                <td>Champions League</td>
+            </tr>
+            <tr class="champions-league-qual">
+                <td>3</td>
+                <td><img src="fc_twente_logo.png" alt="FC Twente Logo"></td>
+                <td class="team-column">FC Twente</td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>+9</td>
+                <td>12</td>
+                <td>Champions League kwalificatie</td>
+            </tr>
+            <tr class="europa-league-qual">
+                <td>4</td>
+                <td><img src="feyenoord_logo.png" alt="Feyenoord Logo"></td>
+                <td class="team-column">Feyenoord</td>
+                <td>5</td>
+                <td>3</td>
+                <td>0</td>
+                <td>2</td>
+                <td>+14</td>
+                <td>11</td>
+                <td>Europa League kwalificatie</td>
+            </tr>
+            <tr class="conference-league-qual">
+                <td>5</td>
+                <td><img src="fortuna_sittard_logo.png" alt="Fortuna Sittard Logo"></td>
+                <td class="team-column">Fortuna Sittard</td>
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+                <td>3</td>
+                <td>+3</td>
+                <td>9</td>
+                <td>Play-offs Conference League kwalificatie</td>
+                
+            </tr>
+            <tr class="play-offs-conference-league-qual">
+                <td>6</td>
+                <td><img src="sparta_rotterdam_logo.png" alt="Sparta Rotterdam Logo"></td>
+                <td class="team-column">Sparta Rotterdam</td>
+                <td>5</td>
+                <td>2</td>
+                <td>1</td>
+                <td>2</td>
+                <td>+1</td>
+                <td>8</td>
+                <td>Play-offs Conference League kwalificatie</td>
+            </tr>
+            <tr class="play-offs-conference-league-qual">
+                <td>7</td>
+                <td><img src="go_ahead_eagles_logo.png" alt="Go Ahead Eagles Logo"></td>
+                <td class="team-column">Go Ahead Eagles</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>+1</td>
+                <td>7</td>
+                <td>Play-offs Conference League kwalificatie</td>
+            </tr></table><left><p style="text-align: left">Champions league:<div class="foo blue"></div> <br><p style="text-align: left">Champions league kwalificatie:<div class="foo purple"></div><p style="text-align: left">Europa league kwalificatie:<div class="foo wine"></div>  
+<p style="text-align: left">confrence league kwalificatie:<div class="foo swine"></div>
+<p style="text-align: left">play-offs confrence league kwalificatie:<div class="foo sswine"></div> 
+
