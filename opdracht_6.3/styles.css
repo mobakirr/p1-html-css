@@ -1,0 +1,46 @@
+body {
+    background-color: #fff; /* Achtergrondkleur wit */
+    font-family: Arial, sans-serif;
+    color: #000080; /* Baby/lichtblauwe letterkleur */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Achtergrondkleur wit voor de navigatiebalk */
+    padding: 10px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    width: 100px; /* Pas de breedte aan zoals nodig */
+    height: auto; /* Zorgt voor het behouden van de juiste verhoudingen */
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #add8e; /* Baby/lichtblauwe letterkleur */
+}
+
+a:hover {
+    text-decoration: underline;
+}
