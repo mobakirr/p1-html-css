@@ -1,0 +1,68 @@
+/* CSS voor desktop */
+body {
+    background-color: #f1f1f1; /* Achtergrondkleur voor desktop */
+}
+
+#dropdown-block {
+    display: none; /* Verberg het element op desktop */
+}
+
+/* Achtergrondkleurklassen voor alinea's op desktop */
+.bg-color-1 {
+    background-color: #ffcc99; /* Aangepaste achtergrondkleur voor alinea 1 op desktop */
+}
+
+.bg-color-2 {
+    background-color: #99ff99; /* Aangepaste achtergrondkleur voor alinea 2 op desktop */
+}
+
+.bg-color-3 {
+    background-color: #9999ff; /* Aangepaste achtergrondkleur voor alinea 3 op desktop */
+}
+
+/* CSS voor tablet (bijv. iPads) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: #ffe4b2; /* Aangepaste achtergrondkleur voor tablet */
+    }
+
+    /* Achtergrondkleurklassen voor alinea's op tablet */
+    .bg-color-1 {
+        background-color: #ff9999; /* Aangepaste achtergrondkleur voor alinea 1 op tablet */
+    }
+
+    .bg-color-2 {
+        background-color: #99ffff; /* Aangepaste achtergrondkleur voor alinea 2 op tablet */
+    }
+
+    .bg-color-3 {
+        background-color: #ff99ff; /* Aangepaste achtergrondkleur voor alinea 3 op tablet */
+    }
+}
+
+/* CSS voor mobiel (bijv. smartphones) */
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #c1c1c1; /* Achtergrondkleur voor mobiel */
+    }
+    #dropdown-block {
+        display: block; /* Maak het element zichtbaar op mobiel */
+        /* Voeg andere stijlen toe zoals breedte, hoogte en achtergrondkleur */
+        width: 20px;
+        height: 20px;
+        background-color: #jouwkleur;
+    }
+
+    /* Achtergrondkleurklassen voor alinea's op mobiel */
+    .bg-color-1 {
+        background-color: #ff9999; /* Aangepaste achtergrondkleur voor alinea 1 op mobiel */
+    }
+
+    .bg-color-2 {
+        background-color: #99ffff; /* Aangepaste achtergrondkleur voor alinea 2 op mobiel */
+    }
+
+    .bg-color-3 {
+        background-color: #ff99ff; /* Aangepaste achtergrondkleur voor alinea 3 op mobiel */
+    }
+}
