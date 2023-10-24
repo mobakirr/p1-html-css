@@ -1,0 +1,42 @@
+/* Aangepaste achtergrondkleuren voor tekstsecties op desktop */
+.bg-color-1 {
+    background-color: #66c2a5; /* Groen */
+}
+
+.bg-color-2 {
+    background-color: #fc8d62; /* Oranje */
+}
+
+.bg-color-3 {
+    background-color: #8da0cb; /* Paars */
+}
+
+/* Aangepaste achtergrondkleuren voor tekstsecties op mobiel */
+@media screen and (max-width: 767px) {
+    .bg-color-1 {
+        background-color: #ffd92f; /* Geel */
+    }
+
+    .bg-color-2 {
+        background-color: #5e4fa2; /* Donkerpaars */
+    }
+
+    .bg-color-3 {
+        background-color: #a2c48d; /* Lichtgroen */
+    }
+}
+
+/* Aangepaste achtergrondkleuren voor tekstsecties op tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .bg-color-1 {
+        background-color: #ff8b94; /* Roze */
+    }
+
+    .bg-color-2 {
+        background-color: #3c91e6; /* Blauw */
+    }
+
+    .bg-color-3 {
+        background-color: #ffc55e; /* Goudgeel */
+    }
+}

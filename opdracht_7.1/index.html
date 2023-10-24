@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voorbeeld met Media Queries</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* CSS voor desktop */
+        body {
+            background-color: #f1f1f1; /* Achtergrondkleur voor desktop */
+        }
+
+        #dropdown-block {
+            display: none; /* Verberg het element op desktop */
+        }
+
+        /* CSS voor mobiel (bijv. smartphones) */
+        @media screen and (max-width: 767px) {
+            body {
+                background-color: #c1c1c1; /* Achtergrondkleur voor mobiel */
+            }
+            #dropdown-block {
+                display: block; /* Maak het element zichtbaar op mobiel */
+                /* Voeg andere stijlen toe zoals breedte, hoogte en achtergrondkleur */
+                width: 20px;
+                height: 20px;
+                background-color: #jouwkleur;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="dropdown-block"></div>
+        <!-- Andere navigatie-elementen -->
+    </nav>
+    
+    <h1>Logo</h1>
+    
+    <h2>Title 1</h2>
+    <p class="bg-color-1">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+    
+    <h2>Title 2</h2>
+    <p class="bg-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+    
+    <h2>Title 3</h2>
+    <p class="bg-color-3">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+</body>
+</html>
