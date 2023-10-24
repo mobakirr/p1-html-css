@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function kleur_aanpassen() {
+            // Vind het h1-element op basis van de tag-naam (onder de veronderstelling dat er slechts één h1 op de pagina is)
+            var h1Element = document.querySelector('h1');
+
+            // Controleer of het h1-element bestaat
+            if (h1Element) {
+                // Verander de kleur van het h1-element
+                h1Element.style.color = 'blue';
+
+                // Verander de tekst van het h1-element
+                h1Element.textContent = 'Inhoud aangepast!';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 onclick="kleur_aanpassen()">Dit is de oorspronkelijke inhoud</h1>
+</body>
+</html>
